@@ -1,21 +1,17 @@
-.hole{
-    padding: 5px;
-    margin: 2px;
-    min-width: 40px;
-    min-height: 40px;
-    border: 1px solid #8c8c8c;
-    border-radius: 20px;
-    cursor:pointer;
-  }
+.hole {
+  padding: 5px;
+  margin: 2px;
+  min-width: 40px;
+  min-height: 40px;
+  border: 1px solid #8c8c8c;
+  border-radius: 20px;
+  cursor: pointer; }
 
-  .empty-hole{
-    background-color: white;
-  }
+.empty-hole {
+  background-color: white; }
 
-  .red-hole {
-    background-color: #d0032e;
-  }
-  
-  .blue-hole {
-    background-color: #2CC5FF;
-  }
+.red-hole {
+  background-color: #d0032e; }
+
+.blue-hole {
+  background-color: #2CC5FF; }
