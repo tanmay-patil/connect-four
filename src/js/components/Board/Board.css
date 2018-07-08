@@ -1,0 +1,11 @@
+.board{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 21.2em;
+    height: 16.5em;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
