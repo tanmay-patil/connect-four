@@ -37,7 +37,7 @@ class ConnectedBoard extends React.Component {
     const boardClone = [...[], ...this.props.boardState];
 
     // Check if there is any vacant spot in this particular slot
-    if(boardClone[verticalSlotID].indexOf(null) != -1){
+    if(boardClone[verticalSlotID].indexOf(null) !== -1){
 
       boardClone[verticalSlotID].reverse();
 
@@ -57,9 +57,19 @@ class ConnectedBoard extends React.Component {
     
   }
 
+  checkWinner(boardState){
+    console.log(boardState);
+  }
+
+  componentDidUpdate(){
+    let status = this.checkWinner(this.props.boardState);
+    console.log(status);
+  }
+
   render() {
     
     this.boardState = this.props.boardState;
+    this.playerTurn = this.props.playerTurn;
 
     return template.call(this);
   }

@@ -14,7 +14,7 @@ const rootReducer = (state = initialState, action) => {
 
         case ACTIONTYPES.UPDATE_BOARD:
 
-            let newPlayerTurn = state.playerTurn == CONST_VAR_OBJ.PLAYER1 ? CONST_VAR_OBJ.PLAYER2 : CONST_VAR_OBJ.PLAYER1;
+            let newPlayerTurn = state.playerTurn === CONST_VAR_OBJ.PLAYER1 ? CONST_VAR_OBJ.PLAYER2 : CONST_VAR_OBJ.PLAYER1;
 
             return { ...state, boardState: action.payload, playerTurn:newPlayerTurn };
 
