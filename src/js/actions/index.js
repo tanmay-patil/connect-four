@@ -5,3 +5,5 @@
 import {ACTIONTYPES} from "../constants/action-types";
 
 export const updateBoard = newBoardState => ({ type: ACTIONTYPES.UPDATE_BOARD, payload: newBoardState });
+
+export const updateWinner = newWinnerState => ({ type: ACTIONTYPES.UPDATE_WINNER, payload: newWinnerState });
